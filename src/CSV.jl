@@ -92,7 +92,7 @@ function read(source, sink=nothing; copycols::Bool=false, kwargs...)
 end
 
 include("precompile.jl")
-_precompile_()
+# _precompile_()
 
 function __init__()
     CSV.Context(IOBuffer(CSV.PRECOMPILE_DATA))
